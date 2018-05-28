@@ -6,6 +6,10 @@
 //plus the value of the name parameter.
 
 //Code here
+function greeting(name) {
+  return "Hello, " + name;
+}
+greeting("Trogdor");
 
 //////////////////PROBLEM 2////////////////////
 
@@ -13,6 +17,12 @@
 //Name it newGreeting.
 
 //Code Here
+let newGreeting = function(name) {
+  return "Hello, " + name;
+}
+
+
+
 
 //////////////////PROBLEM 3////////////////////
 
@@ -20,6 +30,8 @@
 //Name it finalGreeting.
 
 //Code Here
+let finalGreeting = name => "hello, " + name;
+
 
 //////////////////PROBLEM 4////////////////////
 
@@ -27,6 +39,7 @@
 //"apples", "milk", "eggs", "bread"
 
 //Code Here
+let groceries = ["apples", "milk", "eggs", "bread"];
 
 //Write a function called doubleCheck that takes in an array
 //as a parameter.
@@ -35,6 +48,17 @@
 //doubleCheck should return the array.
 
 //Code Here
+
+function doubleCheck(myArray) {
+  for (let i = 0; i < myArray.length; i++){
+    if (myArray[i] !== "chocolate"){
+    myArray.push("chocolate")
+    }
+  }
+}
+myArr = ["Milk", "Almonds"];
+
+console.log(doubleCheck(myArr));
 
 //////////////////PROBLEM 5////////////////////
 
